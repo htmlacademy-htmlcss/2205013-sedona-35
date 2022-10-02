@@ -1,0 +1,35 @@
+.page-body {
+  background: #f2f2f2;
+  padding: 0;
+  margin: 0;
+}
+
+.page-container {
+  width: 1200px;
+  margin-left: auto;
+  margin-right: auto;
+  background: #ffffff;
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
+}
+
+.hero {
+  background: #f2f2f2 url("../images/background/hero-background.jpeg") no-repeat center center;
+  min-height: 500px;
+  background-size: cover;
+}
+
+.title-hero {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+.subscribe-main-page {
+  background: #f2f2f2 url("../images/background/subscribe-background.jpeg") no-repeat center center;
+  min-height: 400px;
+  background-size: cover;
+}
+.catalog-hotels-filters {
+  background: #f2f2f2 url("../images/background/hotels-filter-background.jpeg") no-repeat center center;
+  min-height: 400px;
+  background-size: cover;
+}
