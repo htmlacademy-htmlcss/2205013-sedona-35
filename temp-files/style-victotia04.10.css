@@ -1,0 +1,128 @@
+@font-face {
+  font-family: "PT Sans";
+  font-style: normal;
+  font-weight: 400;
+  src: url("../fonts/ptsans-400.woff2") format("woff2");
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "PT Sans";
+  font-style: normal;
+  font-weight: 700;
+  src: url("../fonts/ptsans-700.woff2") format("woff2");
+  font-display: swap;
+}
+
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  padding: 0;
+  overflow: hidden;
+  border: 0;
+  clip: rect(0 0 0 0);
+}
+
+.page-body {
+  font-family: "PT Sans", Arial, sans-serif;
+  font-size: 18px;
+  line-height: 21px;
+  background: #f2f2f2;
+  padding: 0;
+  margin: 0;
+}
+
+.page-container {
+  width: 1200px;
+  margin-left: auto;
+  margin-right: auto;
+  background: #ffffff;
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
+}
+
+.navigation {
+
+}
+
+.logo {
+
+}
+
+.navigation-list {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+}
+
+.navigation-item {
+
+}
+
+.navigation-link {
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 24px;
+  color: #000000;
+  text-decoration: none;
+}
+
+.navigation-link-current {
+
+}
+
+/*-----------------------*/
+
+.hero {
+  background: #f2f2f2 url("../images/background/hero-background.jpeg") no-repeat center center;
+  min-height: 500px;
+  background-size: cover;
+  padding-top: 50px;
+  padding-bottom: 70px;
+  box-sizing: border-box;
+}
+
+.title-hero {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.advantages {
+
+}
+
+.advantages-text {
+  padding: 0;
+  margin: 0 auto;
+  font-weight: 700;
+  font-size: 30px;
+  line-height: 36px;
+  text-transform: uppercase;
+  text-align: center;
+  width: 620px;
+}
+
+.advantages-description {
+  padding: 0;
+  margin: 0 auto;
+  font-weight: 400;
+  font-size: 22px;
+  line-height: 26px;
+  text-align: center;
+  color: #333333;
+  width: 651px;
+}
+
+.subscribe-main-page {
+  background: #f2f2f2 url("../images/background/subscribe-background.jpeg") no-repeat center center;
+  min-height: 400px;
+  background-size: cover;
+}
+
+.catalog-hotels-filters {
+  background: #f2f2f2 url("../images/background/hotels-filter-background.jpeg") no-repeat center center;
+  min-height: 400px;
+  background-size: cover;
+}
