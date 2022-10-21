@@ -10,10 +10,11 @@
 
   <body class="page-body">
     <div class="page-container">
+      <!-- Header -->
       <header class="page-header">
 
         <nav class="navigation">
-          <a class="logo" href="#">
+          <a class="logo-sedona" href="#">
             <img src="images/logo/logo-sedona.svg" alt="Герб Седоны." width="140" height="70">
           </a>
 
@@ -22,34 +23,36 @@
               <a class="navigation-link navigation-link-current" href="#">Главная</a>
             </li>
             <li class="navigation-item">
-              <a class="navigation-link" href="#">О седоне</a>
+              <a class="navigation-link" href="#">О Cедоне</a>
             </li>
             <li class="navigation-item">
               <a class="navigation-link" href="catalog.html">Гостиницы</a>
             </li>
           </ul>
 
-          <ul class="navigation-list navigation-user">
-            <li class="navigation-item">
-              <a class="navigation-link" href="#">
+          <ul class="navigation-list-user">
+            <li class="navigation-list-user-item">
+              <a class="navigation-list-user-link" href="#">
                 <span class="visually-hidden">Поиск</span>
               </a>
             </li>
-            <li class="navigation-item">
-              <a class="navigation-link" href="#">
+            <li class="navigation-list-user-item">
+              <a class="navigation-list-user-link" href="#">
                 <span class="visually-hidden">Избранное</span>
                 <span class="favorite-number">12</span>
               </a>
             </li>
-            <li class="navigation-item">
-              <a class="navigation-link" href="#">Хочу сюда!</a>
+            <li class="navigation-list-user-item">
+              <a class="navigation-list-user-link button-small " href="#">хочу сюда!</a>
             </li>
           </ul>
         </nav>
       </header>
 
+      <!-- Main -->
       <main class="main-index">
         <h1 class="visually-hidden">Седона-городок в Аризоне</h1>
+
         <section class="hero">
           <h2 class="visually-hidden">Добро пожаловать</h2>
           <img class="title-hero" src="./images/title-hero.svg"
@@ -65,33 +68,46 @@
             Рассмотрим причины, по которым Седона круче, чем Гранд-Каньон!
           </p>
 
-          <ul class="advantages-list">
-            <li class="advantages-item">
-              <h3 class="advantages-item-title">Настоящий городок</h3>
-              <img src="images/content/advantages-real-city.jpeg" alt="Вид Седоны, настоящего города." width="800"
-                height="384">
-              <p class="advantages-item-text">Седона — не аттракцион для туристов, там течёт своя жизнь</p>
+          <ul class="advantages-list ">
+            <li class="advantages-item background-first">
+              <div class="advantages-item-container">
+                <h3 class="advantages-item-title">Настоящий городок</h3>
+                <p class="advantages-item-text">Седона — не аттракцион для туристов, там течёт своя жизнь Lorem ipsum dolor sit amet consectetur adipisicing elit. Placeat, rerum. Illum doloremque nihil accusantium alias architecto cumque quibusdam aliquam, culpa nulla fuga est sed fugiat adipisci beatae, ipsam voluptatibus commodi?Lorem ipsum dolor sit amet consectetur adipisicing elit. Qui quo vel explicabo quasi, unde minus voluptate. Assumenda officiis rerum molestiae, repellendus pariatur debitis, officia hic sapiente sed incidunt voluptate totam?Lorem ipsum dolor sit amet consectetur adipisicing elit. Numquam doloribus, labore tempore culpa aspernatur asperiores ab similique omnis optio nobis est dignissimos, praesentium quaerat! Dignissimos molestias dicta ipsa sunt dolor Lorem, ipsum dolor sit amet consectetur adipisicing elit. Tenetur, eius. Ullam, blanditiis distinctio culpa ex in commodi impedit non explicabo, corporis a, doloremque consequatur nemo aperiam nihil unde beatae adipisci.</p>
+              </div>
+              <div class="advantages-img-container">
+              <img class="advantages-item-img" src="images/content/advantages-real-city.jpeg"
+                alt="Вид Седоны, настоящего города." width="800" height="384">
+              </div>
             </li>
-            <li class="advantages-item">
-              <h3 class="advantages-item-title">Небольшая
-                площадь</h3>
-              <p class="advantages-item-text">Все достопримечательности находятся очень близко</p>
+
+            <li class="advantages-item ">
+              <div class="advantages-item-container">
+                <h3 class="advantages-item-title">Небольшая площадь</h3>
+                <p class="advantages-item-text">Все достопримечательности находятся очень близко</p>
+              </div>
             </li>
-            <li class="advantages-item">
-              <h3 class="advantages-item-title">Красивая
-                дорога</h3>
+            <li class="advantages-item background-second">
+              <div class="advantages-item-container">
+              <h3 class="advantages-item-title">Красивая дорога</h3>
               <p class="advantages-item-text">Ехать в Седону из Лас-Вегаса совсем не скучно!</p>
+            </div>
             </li>
             <li class="advantages-item">
-              <h3 class="advantages-item-title">Мало
-                туристов</h3>
+              <div class="advantages-item-container">
+              <h3 class="advantages-item-title">Мало туристов</h3>
               <p class="advantages-item-text">Большинство едет в Гранд Каньон и толпится там</p>
+              </div>
             </li>
-            <li class="advantages-item">
-              <h3 class="advantages-item-title">Там есть
-                мост дьявола</h3>
+            <li class="advantages-item background-first">
               <img src="images/content/advantages-devil-bridge.jpeg" alt="Мост дьявола." width="800" height="384">
-              <p class="advantages-item-text">Да, по нему можно пройти! Если вы осмелитесь, разумеется</p>
+              <div class="advantages-item-real-city devil-bridge">
+                <div class="advantages-item-container">
+                  <h3 class="advantages-item-title">Там есть мост дьявола</h3>
+                  <p class="advantages-item-text">Да, по нему можно пройти! Если вы осмелитесь, разумеется</p>
+                </div>
+
+
+              </div>
             </li>
           </ul>
         </section>
@@ -104,7 +120,7 @@
               </h3>
               <p class="advantages-recommended-item-text">Рекомендуем пожитьв настоящем мотеле, всё как в кино!</p>
             </li>
-            <li class="advantages-recommended-item">
+            <li class="advantages-recommended-item background-third">
               <h3 class="advantages-recommended-item-title">Еда</h3>
               <p class="advantages-recommended-item-text">Всегда заказывайте топовый фирменный бургер, вы не
                 разочаруетесь!</p>
@@ -124,21 +140,26 @@
           <p class="search-hotels-description">
             Укажите предполагаемые даты поездки,и мы покажем вам лучшие предложения гостиниц в Седоне
           </p>
-          <a class="search-hotels-link" href="#">поиск гостиницы в седоне</a>
+          <a class="search-hotels-link button-big" href="#">Поиск гостиницы в седоне</a>
+        </section>
+      </main>
+
+      <!-- Footer -->
+      <footer class="page-footer">
+
+        <section class="subscribe-main-page">
+          <h2 class="visually-hidden">Подписка на рассылку</h2>
+          <h3 class="subscibe-title">подпишитесь на рассылку</h3>
+          <p class="subscribe-text">Только полезная информация и никакого спама, честное бойскаутское!</p>
+          <form class="subscribe-form" action="https://echo.htmlacademy.ru/" method="post">
+            <label class="visually-hidden" for="subscribe-email">Email</label>
+            <input class="subscribe-form-email" type="email" name="subscribe-email" placeholder="Ваш email"
+              id="subscribe-email">
+            <button class="button-big button-subscribe" type="submit">Подписаться</button>
+          </form>
         </section>
 
-        <footer class="page-footer">
-          <section class="subscribe-main-page">
-            <h2 class="visually-hidden">Подписка на рассылку</h2>
-            <h3 class="subscibe-title">подпишитесь на рассылку</h3>
-            <p class="subscribe-text">Только полезная информация и никакого спама, честное бойскаутское!</p>
-            <form class="subscribe-form" action="https://echo.htmlacademy.ru/" method="post">
-              <label class="visually-hidden" for="subscribe-email">Email</label>
-              <input type="email" name="subscribe-email" value="Ваш email" id="subscribe-email">
-              <button class="button" type="submit">Подписаться</button>
-            </form>
-          </section>
-
+        <div class="footer-container">
           <section class="footer-social">
             <h2 class="visually-hidden">Социальные сети</h2>
 
@@ -178,7 +199,7 @@
             <a class="contacts-phone" href="tel:+78128121212">+7 (812) 812-12-12</a>
           </section>
 
-          <a class="logo" href="https://htmlacademy.ru/">
+          <a class="logo-htmlacademy" href="https://htmlacademy.ru/">
             <svg width="115" height="34" viewBox="0 0 115 34" fill="none" xmlns="http://www.w3.org/2000/svg">
               <path d="M0 13.2564V15.8564H2.5V13.2564H0Z" fill="black" />
               <path
@@ -216,8 +237,8 @@
                 fill="black" />
             </svg>
           </a>
-        </footer>
-      </main>
+        </div>
+      </footer>
     </div>
   </body>
 
