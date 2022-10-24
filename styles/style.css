@@ -355,9 +355,12 @@ html {
 }
 
 .subscribe-form {
-  display: flex;
+  display: grid;
+  grid-template-columns: 1fr auto;
   width: 684px;
   margin: 0 auto;
+  box-sizing: border-box;
+
 }
 
 .subscibe-title {
@@ -386,6 +389,7 @@ html {
   line-height: 24px;
   border-radius: 4px 0 0 4px;
   background-color: #E6E6E6;
+  outline: none;
   border-style: none;
 
 }
@@ -457,6 +461,32 @@ html {
   margin: 0 auto;
 }
 
+.inner-header-title {
+  padding: 0;
+  margin: 0;
+  font-weight: 700;
+  font-size: 60px;
+  line-height: 78px;
+}
+
+.breadcrumbs {
+  display: flex;
+  padding: 0;
+  margin: 0;
+  list-style-type: none;
+  margin-bottom: 40px;
+}
+
+.breadcrumbs-item {
+  font-size: 16px;
+}
+
+.breadcrumbs-link {
+  color: inherit;
+  text-decoration: none;
+  margin-right: 28px;
+}
+
 .catalog-hotels-filters-form {
   display: flex;
 }
@@ -473,6 +503,7 @@ html {
 
 .hotels-filter-cost {
   width: 288px;
+  padding: 0;
 }
 
 .filter-cost-item {
@@ -502,30 +533,17 @@ html {
   margin-left: auto;
 }
 
-.inner-header-title {
-  padding: 0;
-  margin: 0;
-  font-weight: 700;
-  font-size: 60px;
-  line-height: 78px;
+.button-apply {
+  padding: 8px 50px;
+  background-color: #82B3D3;
+  cursor: pointer;
 }
 
-.breadcrumbs {
-  display: flex;
-  padding: 0;
-  margin: 0;
-  list-style-type: none;
-  margin-bottom: 40px;
-}
-
-.breadcrumbs-item {
-  font-size: 16px;
-}
-
-.breadcrumbs-link {
-  color: inherit;
-  text-decoration: none;
-  margin-right: 28px;
+.button-reset {
+  background-color: transparent;
+  border: none;
+  outline: none;
+  cursor: pointer;
 }
 
 .catalog-hotels-filters {
@@ -552,17 +570,7 @@ html {
   line-height: 23px;
 }
 
-.button-apply {
-  background-color: #82B3D3;
-  cursor: pointer;
-}
 
-.button-reset {
-  background-color: transparent;
-  border: none;
-  outline: none;
-  cursor: pointer;
-}
 
 .result-search-title {
   padding: 6px;
@@ -588,43 +596,38 @@ margin-right: 70px;
   width: 48px;
   height: 48px;
 }
-.hotel-card-item {
-  width: 340px;
-  border: 1px solid #E6E6E6;
-  border-radius: 4px;
-  margin: 0;
-  margin-bottom: 20px;
-  margin-right: 20px;
-  padding: 20px;
-  box-sizing: border-box;
-}
-
 
 .hotel-card-list {
-  display: flex;
-  flex-wrap: wrap;
+  display: grid;
+  grid-template-columns: 340px 340px 340px;
+  grid-template-rows: 438px 438px;
+  gap: 20px;
   list-style-type: none;
   margin: 0;
   padding: 0;
   margin-bottom: 20px;
-
 }
 
-.hotel-card-item:nth-child(3n) {
-  margin-right: 0;
-
-}
-
-.hotel-card-kind-price,
-.hotel-card-more-favorite,
-.rating {
+.hotel-card-item {
   display: flex;
+  flex-direction: column;
   justify-content: space-between;
-  width: 300px;
+  width: 340px;
+  border: 1px solid #E6E6E6;
+  border-radius: 4px;
   margin: 0;
-  padding: 0;
+  padding: 20px;
+  box-sizing: border-box;
+
 }
 
+.hotel-card-link {
+display: block;
+}
+
+.hotel-card-image {
+ object-fit: cover;
+}
 
 .hotel-card-link-title {
   color: inherit;
@@ -633,16 +636,15 @@ margin-right: 70px;
 
 .hotel-card-title {
   padding: 0;
-  margin: 0 auto;
+  margin: 0;
   font-weight: 700;
   font-size: 24px;
   line-height: 28px;
-
 }
 
 .hotel-card-type-hotel {
   padding: 0;
-  margin: 0 auto;
+  margin: 0;
   color: #333333;
 }
 
@@ -652,34 +654,49 @@ margin-right: 70px;
 }
 
 .hotel-card-more {
-  display: block;
-  text-decoration: none;
-  width: 140px;
   padding: 8px 26px;
   font-size: 16px;
   line-height: 20px;
 }
 
 .hotel-card-favorite {
-  text-decoration: none;
   background-color: #82B3D3;
-  width: 140px;
   padding: 8px 26px;
+  font-size: 16px;
+  line-height: 20px;
 }
 
 .stars-title {
-  margin: 0;
+  font-weight: 400;
+  padding: 9px 22px 8px 23px;
+  font-size: 16px;
+  line-height: 20px;
+  color: #000000;
   background: #F2F2F2;
-  width: 140px;
+  border-radius: 4px;
+  text-transform: uppercase;
+  text-align: center;
+  margin: 0;
 }
 
-
+.hotel-card-kind-price,
+.hotel-card-more-favorite,
+.rating {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  width: 300px;
+  margin: 0;
+  padding: 0;
+}
 
 .pagination {
   display: flex;
-  justify-content: start;
   list-style-type: none;
   flex-wrap: wrap;
+  margin: 0;
+  padding: 0;
+  margin-bottom: 60px;
 }
 
 
