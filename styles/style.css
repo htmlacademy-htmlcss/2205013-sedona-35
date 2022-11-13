@@ -197,7 +197,6 @@ input:disabled {
 .navigation-link-current {
   text-decoration: underline;
   text-underline-offset: 23px;
-  -webkit-text-decoration-color: #756157;
   text-decoration-color: #756157;
 }
 
@@ -711,7 +710,6 @@ input:disabled {
   position: fixed;
   top: 0;
   left: 0;
-  display: flex;
   width: 100%;
   height: 100%;
   background-color: #f2f2f2cc;
@@ -769,7 +767,6 @@ input:disabled {
   font-weight: 700;
   font-size: 30px;
   line-height: 36px;
-  font-weight: 700;
   text-transform: uppercase;
 }
 
@@ -953,7 +950,6 @@ input:disabled {
   text-transform: none;
   padding: 15px 18px 18px 22px;
   border-radius: 10px;
-  display: block;
   width: 256px;
   position: absolute;
   top: 100%;
@@ -996,6 +992,7 @@ input:disabled {
   padding: 18px;
   border: none;
   border-radius: 10px;
+  cursor: pointer;
 }
 
 .hotels-filters {
@@ -1291,11 +1288,11 @@ input:disabled {
 }
 
 .range-toggle:focus {
-  border-radius: 3px solid #83b3d3;
+  border: 3px solid #83b3d3;
 }
 
 .range-toggle:active {
-  border-radius: 2px solid #82b3d3;
+  border: 2px solid #82b3d3;
 }
 
 .toggle-from {
@@ -1632,7 +1629,6 @@ input:disabled {
   padding: 8px 21px 8px 24px;
   font-size: 16px;
   line-height: 20px;
-  min-width: 140px;
   color: #000000;
   background: #f2f2f2f7;
   border-radius: 4px;
