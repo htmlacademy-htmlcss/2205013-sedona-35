@@ -1135,7 +1135,7 @@ input:disabled {
   content: "";
   width: 13px;
   height: 10px;
-  background-image: url(../images/icons/control-input-V.svg);
+  background-image: url(../images/icons/control-input-v.svg);
   left: 1px;
   top: 3px;
 }
