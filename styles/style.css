@@ -596,7 +596,7 @@ input:disabled {
 
 .subscribe-form-email {
   margin: 0;
-  padding: 14px 20px;
+  padding: 0;
   width: 452px;
   font-family: "PT Sans", Arial, sans-serif;
   font-size: 18px;
@@ -606,6 +606,13 @@ input:disabled {
   border: none;
   box-sizing: border-box;
   cursor: pointer;
+  position: relative;
+}
+
+.subscribe-form-email::placeholder {
+  position: absolute;
+  margin-left: 20px;
+  margin-top: 14px;
 }
 
 .subscribe-form-email:hover {
@@ -948,12 +955,12 @@ input:disabled {
   line-height: 20px;
   font-weight: 400;
   text-transform: none;
-  padding: 15px 18px 18px 22px;
+  padding: 19px 18px 24px 22px;
   border-radius: 10px;
-  width: 256px;
+  width: 216px;
   position: absolute;
   top: 100%;
-  margin-top: 25px;
+  margin-top: 15px;
   left: 50%;
   transform: translateX(-50%);
   z-index: 1;
@@ -1317,7 +1324,6 @@ input:disabled {
   font-size: 16px;
   line-height: 20px;
   padding: 8px 50px;
-  background-color: #6bc2fb;
   border: none;
   cursor: pointer;
   margin-bottom: 32px;
